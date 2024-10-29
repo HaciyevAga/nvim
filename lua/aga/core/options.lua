@@ -27,4 +27,4 @@ vim.opt.background        ="dark"
 
 vim.opt.signcolumn = "yes"
 
-
+vim.opt.clipboard = "unnamed"

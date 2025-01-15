@@ -23,9 +23,10 @@ vim.opt.visualbell      =true
 vim.opt.smartindent     =true
 vim.opt.termguicolors   =true
 vim.opt.compatible      =false
-vim.opt.background        ="dark"
+vim.opt.background      ="dark"
 
 vim.opt.signcolumn = "yes"
 
 vim.opt.clipboard = "unnamed"
 
+vim.opt.cursorcolumn    =true

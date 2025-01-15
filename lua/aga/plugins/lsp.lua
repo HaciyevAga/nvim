@@ -26,9 +26,10 @@ return {
         require("mason-lspconfig").setup({
             ensure_installed = {
                 "marksman",
-                "clangd", 
+                "clangd",
                 "lua_ls",
                 "pylsp",
+                "rust_analyzer"
             },
             handlers = {
                 function(server_name) -- default handler (optional)

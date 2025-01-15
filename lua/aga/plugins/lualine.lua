@@ -6,7 +6,7 @@ return{
     },
     opts = {
         options = {
-            theme = "gruvbox",
+            theme = "everforest",
             component_separators = { left = "│", right = "│" },
             section_separators = { left = "", right = "" },
             globalstatus = true,

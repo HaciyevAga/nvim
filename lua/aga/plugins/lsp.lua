@@ -29,7 +29,8 @@ return {
                 "clangd",
                 "lua_ls",
                 "pylsp",
-                "rust_analyzer"
+                "rust_analyzer",
+                "gopls"
             },
             handlers = {
                 function(server_name) -- default handler (optional)

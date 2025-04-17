@@ -2,4 +2,7 @@ require("aga.core.keymaps")
 require("aga.core.options")
 require("aga.lazy")
 require("lazy").setup("plugins")
---Lua:
+
+
+
+vim.cmd.colorscheme "everforest"

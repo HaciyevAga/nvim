@@ -5,4 +5,4 @@ require("lazy").setup("plugins")
 
 
 
-vim.cmd.colorscheme "everforest"
+vim.cmd.colorscheme "nvimgelion"

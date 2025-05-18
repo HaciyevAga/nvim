@@ -30,7 +30,8 @@ return {
                 "lua_ls",
                 "pylsp",
                 "rust_analyzer",
-                "gopls"
+                "gopls",
+                "bashls"
             },
             handlers = {
                 function(server_name) -- default handler (optional)
@@ -61,9 +62,10 @@ return {
                         capabilities = capabilities,
                         settings = {
                             Lua = {
+                                -- workspace={library={vim.fn.globpath(vim.o.runtimepath, "love2d/library")}},
                                 runtime = { version = "Lua 5.1" },
                                 diagnostics = {
-                                    globals = { "bit", "vim", "it", "describe", "before_each", "after_each" },
+                                    globals = { "bit", "vim", "it", "describe", "before_each", "after_each"},
                                 }
                             }
                         }
@@ -109,6 +111,7 @@ return {
                 header = "",
                 prefix = "",
             },
+            virtual_text = true,
         })
     end
 }

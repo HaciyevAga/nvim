@@ -30,3 +30,5 @@ vim.opt.signcolumn = "yes"
 vim.opt.clipboard = "unnamed"
 
 vim.opt.cursorcolumn    =true
+
+

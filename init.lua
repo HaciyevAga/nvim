@@ -5,4 +5,4 @@ require("lazy").setup("plugins")
 
 
 
-vim.cmd.colorscheme "vscode"
+vim.cmd.colorscheme "nord"

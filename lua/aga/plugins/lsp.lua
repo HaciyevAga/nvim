@@ -23,6 +23,11 @@ return {
 
         require("fidget").setup({})
         require("mason").setup()
+
+
+        require'lspconfig'.clangd.setup{
+            cmd = {"clangd", "--compile-commands-dir=build"},
+        }
         require("mason-lspconfig").setup({
             ensure_installed = {
                 "marksman",
@@ -31,17 +36,17 @@ return {
                 "pylsp",
                 "rust_analyzer",
                 "gopls",
-                "bashls"
+                "bashls",
             },
             handlers = {
                 function(server_name) -- default handler (optional)
-                    require("lspconfig")[server_name].setup {
+                    vim.lsp.config(server_name).setup {
                         capabilities = capabilities
                     }
                 end,
 
                 zls = function()
-                    local lspconfig = require("lspconfig")
+                    local lspconfig = vim.lsp.config("lspconfig")
                     lspconfig.zls.setup({
                         root_dir = lspconfig.util.root_pattern(".git", "build.zig", "zls.json"),
                         settings = {
@@ -57,7 +62,7 @@ return {
 
                 end,
                 ["lua_ls"] = function()
-                    local lspconfig = require("lspconfig")
+                    local lspconfig =  vim.lsp.config("lspconfig")
                     lspconfig.lua_ls.setup {
                         capabilities = capabilities,
                         settings = {

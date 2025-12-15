@@ -29,6 +29,7 @@ vim.opt.signcolumn = "yes"
 
 vim.opt.clipboard = "unnamed"
 
-vim.opt.cursorcolumn    =true
+--vim.opt.cursorcolumn    =true
 
 
+vim.o.sessionoptions="blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
